@@ -19,10 +19,16 @@
     <h1 class="text-center text-4xl mt-10 mb-10">
       Generate Your Random Number
     </h1>
-    <button id="generateBtn" class="w-52 mx-auto btn text-2xl block">
-      GENERATE
-    </button>
-    <p id="notGenerated" class="text-center mt-2">Not Generated</p>
+    <div class="flex justify-evenly items-center">
+      <div>
+        <p id="life" class="text-2xl text-accent"></p>
+      </div>
+      <div class="flex flex-col justify-center">
+        <button id="generateBtn" class="btn text-2xl block">GENERATE</button>
+        <p id="notGenerated" class="text-center mt-2">Not Generated</p>
+      </div>
+      <p id="balance" class="text-2xl text-accent"></p>
+    </div>
 
     <div class="flex justify-center gap-20">
       <div class="">
@@ -51,15 +57,18 @@
             CHECK
           </button>
         </div>
+        <div id="errorMessage"></div>
       </div>
       <div class="text-center">
         <h1 class="text-4xl font-bold mb-5">Hints</h1>
         <div class="grid grid-cols-2 gap-5">
           <div class="bg-gray-800 w-64 h-96 rounded-xl p-5">
             <h1 class="text-2xl text-accent">Greater Than</h1>
+            <div id="greaterThen"></div>
           </div>
           <div class="bg-gray-800 w-64 h-96 rounded-xl p-5">
             <h1 class="text-2xl text-accent">Less Then</h1>
+            <div id="lessThen"></div>
           </div>
         </div>
       </div>
